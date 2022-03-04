@@ -13,7 +13,7 @@
 //                    0 -> return '0'
 //P: Write a function that takes a number as a parameter.
 function numberToString(num) {
-    return num.toString()
+    return num.toString() // another alternative is String(num)
 }
 
 console.log(12345) // as a comparison
