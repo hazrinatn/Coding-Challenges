@@ -6,7 +6,7 @@
 //                    true -> return 'Yes'
 //P: Write a function that takes a boolean as a parameter
 function booleanToString(boolean) {
-    return boolean === true ? 'Yes' : 'No'
+    return boolean ? 'Yes' : 'No'
 }
 
 console.log(booleanToString(false)) //should return 'No'
