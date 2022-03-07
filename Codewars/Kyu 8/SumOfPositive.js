@@ -12,16 +12,16 @@
 //P: Write a function that takes an array as a parameter
 function sumPositives(arr) {
     let sum = 0
+    //Loop thorugh the array to find the positive numbers
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > 0) {
+        //Sum all the positive numbers
             sum += arr[i]
         } 
-    }  
+    }
+    //Return the result
     return sum
 }
-//Loop thorugh the array to find the postive numbers
-//Sum all the positive numbers
-//Return the result
 
 console.log(sumPositives([1, -2, 3])) // should return 4
 console.log(sumPositives([15, 10, 27])) // should return 52
