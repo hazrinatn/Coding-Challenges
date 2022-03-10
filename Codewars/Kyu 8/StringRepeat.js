@@ -10,10 +10,16 @@
 //                    2 and "Yo" -> return "YoYo"
 //P: Write a function that takes string and number as parameters
 function repeatStr(n, str) {
+    //create an empty array
     let a = [];
+
+    //loop as much as the number
     for (let i = 0; i < n; i++) {
+        //push the string to the array
         a.push(str)
     }
+    
+    //join the array to become a string again
     return a.join('')
 }
 
