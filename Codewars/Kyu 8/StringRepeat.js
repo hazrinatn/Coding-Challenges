@@ -18,7 +18,7 @@ function repeatStr(n, str) {
         //push the string to the array
         a.push(str)
     }
-    
+
     //join the array to become a string again
     return a.join('')
 }
@@ -26,4 +26,10 @@ function repeatStr(n, str) {
 console.log(repeatStr(3, "N")) // should return "NNN"
 console.log(repeatStr(7, "Rain")) // should return "RainRainRainRainRainRain"
 console.log(repeatStr(2, "Yo")) // should return "YoYo"
+
+
+//Alternative solution
+// function repeatStr(n, str) {
+//     return str.repeat(n)
+// }
 
