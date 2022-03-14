@@ -26,7 +26,7 @@ console.log(smallestNum([10, 0, 45])); // should return 0
 // function.apply(thisArg, [argsArray]) accepts two arguments. thisArg is for explicitly stating which object this should refer to. [argsArray] is whatever arguments you’d like to pass into the original function in the format of an array.
 
 //Alternative solution
-//Use Math.min and array destructuring
+//Use Math.min and spread operator
 // class SmallestIntegerFinder {
 //   findSmallestInt(args) {
 //     return Math.min(...args)
