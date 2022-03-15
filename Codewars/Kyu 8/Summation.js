@@ -28,4 +28,7 @@ console.log(sum(4)); //should return (1+2+3+4) 10
 console.log(sum(7)); //should return (1+2+3+4+5+6+7) 28
 console.log(sum(8)); //should return (1+2+3+4+5+6+7+8) 36
 
-
+//Alternative Solution
+// function summation(num) {
+//   return num * (num + 1) / 2
+// }
