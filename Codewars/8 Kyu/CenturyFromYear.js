@@ -17,12 +17,9 @@
 //                    2000 -> 20
 //P: Make a function that takes a number as the parameter
 function century(year) {
-    if (year < 100) {
-        return Math.floor(100/year)
-    } else {
-        return Math.ceil(year/100)
-    }
+    return Math.ceil(year / 100)
 }
+
 
 console.log(century(101)); // should return 2
 console.log(century(2000)); // should return 20
