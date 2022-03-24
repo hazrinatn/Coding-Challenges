@@ -32,3 +32,20 @@ console.log(basicMaths('+', 20, 2)); // should return 22
 console.log(basicMaths('-', 15, 18)); // should return -3
 console.log(basicMaths('*', 6, 3)); // should return 18
 console.log(basicMaths('/', 24, 2)); // should return 12
+
+
+//Alternative Solution
+// function basicOp(operation, value1, value2) {
+//     switch (operation) {
+//         case '+':
+//             return value1 + value2;
+//         case '-':
+//             return value1 - value2;
+//         case '*':
+//             return value1 * value2;
+//         case '/':
+//             return value1 / value2;
+//         default:
+//             return 0;
+//     }
+// }
