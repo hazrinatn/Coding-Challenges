@@ -20,3 +20,12 @@ function reversedSeq (n) {
 console.log(reversedSeq(7)); // should return [7, 6, 5, 4, 3, 2, 1]
 console.log(reversedSeq(3)); // should return [3, 2, 1]
 console.log(reversedSeq(4)); // should return [4, 3, 2, 1]
+
+
+//Alternative solution
+// const reverseSeq = n => {
+//     let arr = [];
+//       for (let i=n; i>0; i--) {
+//         arr.push(i);
+//         } return arr;
+// };
