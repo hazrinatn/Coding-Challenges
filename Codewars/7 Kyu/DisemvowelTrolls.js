@@ -18,7 +18,8 @@ function trolls(string) {
     let split = string.split("");
     let arr = [];
     for (let i = 0; i < split.length; i++) {
-        if (split[i] !== 'a' && split[i] !== 'e' && split[i] !== 'i' && split[i] !== 'o' && split[i] !== 'u') {
+        if (split[i] !== 'a' && split[i] !== 'e' && split[i] !== 'i' && split[i] !== 'o' && split[i] !== 'u' 
+        && split[i] !== 'A' && split[i] !== 'E' && split[i] !== 'I' && split[i] !== 'O' && split[i] !== 'U') {
             arr.push(split[i]);
         }
     }
@@ -28,3 +29,9 @@ function trolls(string) {
 console.log(trolls("This website sucks")); // should return "Ths wbst scks"
 console.log(trolls("Get lost loser")); // should return "Gt lst lsr"
 console.log(trolls("This website is for losers LOL!")); // should return "Ths wbst s fr lsrs LL"
+
+//Alternative Solution
+//Best Practice: using Regular Expression
+// function disemvowel(str) {
+//     return str.replace(/[aeiou]/gi, '');
+// }
