@@ -26,3 +26,9 @@ function banjo(name) {
 console.log(banjo("Rubus")); // should return "Rubus plays banjo"
 console.log(banjo("Pawat")); // should return "Pawat does not play banjo"
 console.log(banjo("Nanon")); // should return "Nanon does not play banjo"
+
+
+//Alternative Solution
+// function areYouPlayingBanjo(name) {
+//     return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+// }
