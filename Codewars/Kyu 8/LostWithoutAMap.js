@@ -12,9 +12,14 @@
 //(P) Pseudocode:
 //Make a function that takes in an array.
 function doubled(arr) {
-    return arr.map(element => element*2)
+    if (arr === undefined || arr.length === 0) {
+        console.log('Array is invalid')
+    } else {
+        return arr.map(element => element*2)
+    }
 }
 
 //Map through the array and multiply element by 2. Also return.
 console.log(doubled([0,-1]))
-console.log(doubled([5,7,9]), [10,14,18])
+console.log(doubled([5, 7, 9]), [10, 14, 18])
+doubled([])
