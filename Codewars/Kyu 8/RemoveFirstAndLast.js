@@ -16,3 +16,13 @@ console.log(removeChars("extravagant")) // should return "xtravagan"
 console.log(removeChars("trophy")) // should return "roph"
 
 
+//Alternative solution
+// function removeChar(str){
+//  return str.substring(1, str.length-1);
+// };
+
+// Notes:
+    //substring(indexStart, indexEnd) 
+    // -> indexStart: The index of the first character to include in the returned substring.
+    // -> indexEnd: The index of the first character to exclude from the returned substring.
+
