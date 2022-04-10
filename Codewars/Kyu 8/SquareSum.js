@@ -23,3 +23,26 @@ console.log(squareSum([2, 2, 0])); // should return (2^2 + 2^2 + 0^2) 8
 console.log(squareSum([1, 8])); // should return (1^2 + 8^2) 65
 console.log(squareSum([3, 3, 2, 5])); // should return (3^2 + 3^2 + 2^2 + 5^2) 47
 
+
+//Alternative Solution
+//Use .reduce()
+
+//function squareSum(numbers){
+//   return numbers.reduce(function(sum, n){
+//     return (n*n) + sum;
+//   }, 0)
+// }
+
+//Syntax with another example:
+// const array = [1, 2, 3, 4];
+// const initialValue = 0;
+// const sumWithInitial = array.reduce(
+//   (previousValue, currentValue) => previousValue + currentValue,
+//   initialValue
+// );
+// console.log(sumWithInitial);
+
+
+
+
+
