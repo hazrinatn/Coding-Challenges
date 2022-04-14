@@ -15,3 +15,11 @@ console.log(removeSpaces("Hello World"));// should return "HelloWorld"
 console.log(removeSpaces("Da ra ri"));// should return "Darari"
 console.log(removeSpaces("Too cool for school"));// should return "Toocoolforschool"
 
+//Alternative solution
+//Use Regex
+// function noSpace(x){
+//   return x.replace(/\s/g, '');
+// }
+// \s = match non-white space characters
+// \g = global (extract pattern more than once)
+
