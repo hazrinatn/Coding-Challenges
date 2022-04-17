@@ -36,3 +36,16 @@ console.log(countSheep([true, true, false, true, false])); //should return 3
 console.log(countSheep([])); //should return 0
 console.log(countSheep([false, false, false])); //should return 0
 
+//Alternative Solution
+
+// function countSheeps(arrayOfSheeps) {
+//   return arrayOfSheeps.filter(Boolean).length;
+// }
+
+// function countSheeps(arrayOfSheep) {
+//   var num = 0;
+//   for(var i = 0; i < arrayOfSheep.length; i++)
+//     if(arrayOfSheep[i] == true)
+//       num++;
+//   return num;
+// }
