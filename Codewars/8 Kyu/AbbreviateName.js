@@ -23,3 +23,10 @@ function initials(name) {
 console.log(initials("Richard Feynman")) // return R.F
 console.log(initials("Fyodor Dostoyevsky")) // return F.D
 console.log(initials("William So")) // return W.S
+
+
+//Alternative solution
+// function abbrevName(name){
+//   let nameArray = name.split(" ");
+//   return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+// }
