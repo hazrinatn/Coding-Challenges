@@ -24,3 +24,8 @@ function divisibleBy(n, x, y) {
 console.log(divisibleBy(25, 5, 3)); // should return false
 console.log(divisibleBy(22, 18, 12)); // should return false
 console.log(divisibleBy(18, 6, 9)); // should return true
+
+//Alternative solution
+// function isDivisible(n, x, y) {
+//     return n % x === 0 && n % y === 0
+// }
