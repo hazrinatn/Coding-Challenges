@@ -31,5 +31,10 @@ console.log(findNeedle(['needle', 'junk', 'moreJunk']));// should return "found 
 console.log(findNeedle(['hay', 'needle', 'junk', 'moreJunk']));// should return "found the needle at position 1"
 console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']));// should return "found the needle at position 5"
 
+//Alternative solution
+// function findNeedle(haystack) {
+//     return "found the needle at position " + haystack.indexOf("needle");
+// }
+
 
 
