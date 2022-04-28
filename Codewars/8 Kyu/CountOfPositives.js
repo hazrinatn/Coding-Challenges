@@ -18,7 +18,9 @@
 function countAndSum(arr) {
     let count = 0;
     let sum = 0;
-    if (arr.length !== 0) {
+    if (arr == null || arr.length < 1) {
+        return [];
+    } else {
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] > 0) {
                 count += 1
@@ -27,12 +29,8 @@ function countAndSum(arr) {
             }
         }
         return [count, sum];
-    } else {
-        return [];
     }
-    
 }
-
 
 console.log(countAndSum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15])); // should return [10, -65]
 console.log(countAndSum([5, 6, -3, -5, -7, 0])); // should return [2, -15]
