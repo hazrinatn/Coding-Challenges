@@ -23,3 +23,8 @@ function clock(h, m, s) {
 
 console.log(clock(1, 1, 1)); // should return 3.661.000
 console.log(clock(2, 1, 1)); // should return 7.261.000
+
+//Alternative solution
+// function past(h, m, s){
+//     return ((h*3600)+(m*60)+s)*1000;
+// }
