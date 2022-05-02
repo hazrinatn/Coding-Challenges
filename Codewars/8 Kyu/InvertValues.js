@@ -17,3 +17,6 @@ function invertVal(arr) {
 
 console.log(invertVal([-7, -8, 2, 5, 0])); // should return [7, 8, -2, -5, 0]
 console.log(invertVal([])); // should return []
+
+//Alternative solution (if 0 is returned as -0)
+//const invert = array => array.map(num => -num);
