@@ -29,3 +29,9 @@ function fakeBinary(string) {
 console.log(fakeBinary("12345")); // should return "00001"
 console.log(fakeBinary("7895432")); // should return "1111000"
 console.log(fakeBinary("0621")); // should return "0100"
+
+
+//Alternative solution 
+// function fakeBin(x) {
+//     return x.split('').map(n => n < 5 ? 0 : 1).join('');
+// }
