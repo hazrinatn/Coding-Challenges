@@ -40,3 +40,18 @@ console.log(getMean([4, 5, 6, 7, 8], 2, 3)); // should return 5.75
 console.log(getMean([4, 5, 6, 7, 8], 2, 2)); // should return 6
 console.log(getMean([1, 3, 2, 4], 1, 2)); // should return -1
 console.log(getMean([1, 3, 2, 4], 2, 3) ); // should return 2.5
+
+
+//Alternative Solution
+// function getMean(arr, x, y) {
+//     var m1=0, m2=0, array1=[];  
+//     if(x < 2 || y < 2 || x > arr.length || y > arr.length)  return -1;
+    
+//     for(var i=arr.length-1; i>=0; i--)  array1.push(arr[i]);
+    
+//     for(var i=0; i < arr.length; i++){
+//       if(i<x)m1 += arr[i];
+//       if(i<y)m2 += array1[i]; 
+//     }
+//     return (m1/x + m2/y)/2;
+// }
