@@ -27,3 +27,10 @@ console.log(getCount("et lux tenebris lucet")); // should return 7
 console.log(getCount("abracadabra")); // should return 5
 
 
+//Alternative Solution
+//Using Regular Expression
+// function getCount(str) {
+//     return (str.match(/[aeiou]/ig)||[]).length;
+// }
+
+
