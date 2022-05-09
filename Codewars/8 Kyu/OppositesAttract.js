@@ -23,3 +23,8 @@ console.log(oppositesAttract(2,2));
 console.log(oppositesAttract(3,8));
 console.log(oppositesAttract(4,7));
 console.log(oppositesAttract(5,5));
+
+//Alternative Solution
+// function lovefunc(flower1, flower2){
+//     return flower1 % 2 !== flower2 % 2;
+// }
