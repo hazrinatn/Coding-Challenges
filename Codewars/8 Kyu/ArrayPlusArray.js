@@ -16,3 +16,8 @@ function sumArr(arr1, arr2) {
 console.log(sumArr([1, 2, 3, 4], [4, 5, 9, 7]));
 console.log(sumArr([-2, 4, 2, 3], [6, 3, -1]));
 console.log(sumArr([2, -3], [9, 7, 4]));
+
+//Alternative solution
+// function arrayPlusArray(arr1, arr2) {
+//     return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+// }
