@@ -39,5 +39,17 @@ console.log(getMiddle("Trackers")); // should return "ck"
 console.log(getMiddle("Claim")); // should return "a"
 console.log(getMiddle("Saved")); // should return "v"
 
+//Alternative solution
+// function getMiddle(s) {
+//   return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+// }
+
+// function getMiddle(s) {
+//     let middle = s.length / 2;
+//     return (s.length % 2) 
+//       ? s.charAt(Math.floor(middle))
+//       : s.slice(middle - 1, middle + 1);
+// }
+
 
 
