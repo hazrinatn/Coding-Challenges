@@ -20,3 +20,8 @@ console.log(square(15678)); // should return 125364964
 console.log(square(349)); // should return 91681
 console.log(square(2232)); // should return 4494
 
+//Alternative solution
+// function squareDigits(num){
+//     return Number(('' + num).split('').map(function (val) { return val * val;}).join('')); 
+// }
+
