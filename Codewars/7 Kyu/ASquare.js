@@ -17,3 +17,12 @@
 //  4  =>  true
 // 25  =>  true
 // 26  =>  false
+
+//P: num, int, +, -, can be 0
+//R: true if the num is a square number, otherwise false
+//E: If we were given -5 -> return false
+//                    0 -> return true
+//                    16 -> return true
+//                    7 -> return false
+//P: Make a function that takes a number as the parameter
+//conditionals
