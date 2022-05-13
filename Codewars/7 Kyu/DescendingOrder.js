@@ -24,3 +24,7 @@ console.log(descOrder(745687)); // should return 877654
 console.log(descOrder(156734)); // should return 765431
 console.log(descOrder(80934758)); // should return 98875430
 
+//Alternative Solution
+// function descendingOrder(n){
+//     return parseInt(String(n).split('').sort().reverse().join(''))
+// }
