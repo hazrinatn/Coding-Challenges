@@ -29,3 +29,8 @@ console.log(filterList(['a', 'b', 7, 32, 45])); // should return [7, 32, 45]
 console.log(filterList(['nnn', 'mmm', 309, 987])); // should return [309, 987]
 
 
+//Alternative solution
+// function filter_list(l) {
+//     return l.filter(v => typeof v == "number")
+// }
+
