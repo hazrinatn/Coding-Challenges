@@ -24,3 +24,10 @@ console.log(jadenCased("hello world"));
 console.log(jadenCased("good evening folks"));
 console.log(jadenCased("Be brave enough to suck at something new"));
 console.log(jadenCased("How can mirrors be real if our eyes aren't real"));
+
+//Alternative solution
+// String.prototype.toJadenCase = function () { 
+//     return this.split(" ").map(function(word){
+//       return word.charAt(0).toUpperCase() + word.slice(1);
+//     }).join(" ");
+// }
