@@ -16,22 +16,13 @@
 //conditionals %, push to array
 //sum
 function multiplies(num) {
-    let arr = [];
-    if (num > 0) {
+    let sum = 0;
         for (let i = 0; i < num; i++) {
             if (i % 3 === 0 || i % 5 === 0) {
-                arr.push(i);
+               sum += i
             }
         }
-        let sum = 0;
-        for (let j = 0; j < arr.length; j++) {
-            sum += arr[j];
-        }
         return sum;
-    } else {
-        return 0;
-    }
-    
 }
 
 console.log(multiplies(7)); // should return 14
