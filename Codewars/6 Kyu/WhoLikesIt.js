@@ -22,17 +22,19 @@
 //loop
 //conditionals
 function likes(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr.length < 1) {
-            return `no one likes this`
-        } else if (arr.length < 2) {
-            return `${arr[0]} likes this`
-        } else if (arr.length < 3){
-            return `${arr[0]} and ${arr[1]} likes this`
-        } else if (arr.length < 4) {
-            return `${arr[0]}, ${arr[1]} and ${arr[2]} like this`
-        } else if (arr.length >= 4) {
-            return `${arr[0]}, ${arr[1]} and ${arr.length - 2} others like this`
+    if (arr.length < 1) {
+        return `no one likes this`
+    } else {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr.length < 2) {
+                return `${arr[0]} likes this`
+            } else if (arr.length < 3){
+                return `${arr[0]} and ${arr[1]} likes this`
+            } else if (arr.length < 4) {
+                return `${arr[0]}, ${arr[1]} and ${arr[2]} like this`
+            } else if (arr.length >= 4) {
+                return `${arr[0]}, ${arr[1]} and ${arr.length - 2} others like this`
+            }
         }
     }
 }
@@ -41,4 +43,27 @@ console.log(likes(['John', 'Peter', 'Dave', 'Greg']));
 console.log(likes(['John', 'Peter']));
 console.log(likes(['John', 'Peter', 'Dave']));
 console.log(likes(['John']));
+console.log(likes([]));
 
+//Alternative Solution
+// function likes(names) {
+//     names = names || [];
+//     switch(names.length){
+//       case 0: return 'no one likes this'; break;
+//       case 1: return names[0] + ' likes this'; break;
+//       case 2: return names[0] + ' and ' + names[1] + ' like this'; break;
+//       case 3: return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this'; break;
+//       default: return names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this';
+//     }
+// }
+
+
+// function likes(names) {
+//     return {
+//       0: 'no one likes this',
+//       1: `${names[0]} likes this`, 
+//       2: `${names[0]} and ${names[1]} like this`, 
+//       3: `${names[0]}, ${names[1]} and ${names[2]} like this`, 
+//       4: `${names[0]}, ${names[1]} and ${names.length - 2} others like this`, 
+//     }[Math.min(4, names.length)]
+// }
