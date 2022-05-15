@@ -17,9 +17,20 @@ function phoneNumber(arr) {
     let firstPart = arr.slice(0, 3).join('');
     let secPart = arr.slice(3, 6).join('');
     let lastPart = arr.slice(6).join('');
-    return `(${firstPart}) ${secPart}-${lastPart}`
+    return `(${firstPart}) ${secPart}-${lastPart}`;
 }
 
 console.log(phoneNumber([1, 2, 3, 9, 7, 3, 8, 4, 2, 1])); // should return "(123) 973-8421"
 console.log(phoneNumber([4, 5, 6, 1, 2, 3, 9, 7, 5, 8])); // should return "(456) 123-9758"
 console.log(phoneNumber([0, 2, 1, 8, 7, 5, 2, 4, 3, 7])); // should return "(021) 875-2437"
+
+
+//ALternative Solution
+// function createPhoneNumber(numbers){
+//     let format = "(xxx) xxx-xxxx";
+//     for(let i = 0; i < numbers.length; i++)
+//     {
+//       format = format.replace('x', numbers[i]);
+//     }
+//     return format;
+// }
