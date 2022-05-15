@@ -26,3 +26,19 @@
 //                    7 -> return false
 //P: Make a function that takes a number as the parameter
 //conditionals
+
+function isSquare(num) {
+    return Number.isInteger(Math.sqrt(num));
+}
+
+console.log(isSquare(16));
+console.log(isSquare(3));
+console.log(isSquare(-5));
+console.log(isSquare(0));
+
+
+//Alternative solution
+// function isSquare(n) {
+//     return Math.sqrt(n) % 1 === 0;
+// }
+
