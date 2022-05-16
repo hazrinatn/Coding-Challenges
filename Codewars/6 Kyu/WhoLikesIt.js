@@ -47,6 +47,24 @@ console.log(likes([]));
 
 //Alternative Solution
 // function likes(names) {
+//     return {
+//       0: 'no one likes this',
+//       1: `${names[0]} likes this`, 
+//       2: `${names[0]} and ${names[1]} like this`, 
+//       3: `${names[0]}, ${names[1]} and ${names[2]} like this`, 
+//       4: `${names[0]}, ${names[1]} and ${names.length - 2} others like this`, 
+//     }[Math.min(4, names.length)]
+// }
+
+//Explanation:
+// let me = {0: "first property of object", 1: "second property"}; console.log(me[Math.round(0.1)]); //logs "first property of object"
+
+// As you can see in this code, what is inside the brackets is not an array, is an identifier :)
+
+// It's not an "object-array" {}[]. It's just the identifier of the object. This also is possible: console.log({"hello": "hello world", "bye": "good night and good luck"}["bye"]); //logs "good night and good luck"
+
+
+// function likes(names) {
 //     names = names || [];
 //     switch(names.length){
 //       case 0: return 'no one likes this'; break;
@@ -55,15 +73,4 @@ console.log(likes([]));
 //       case 3: return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this'; break;
 //       default: return names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this';
 //     }
-// }
-
-
-// function likes(names) {
-//     return {
-//       0: 'no one likes this',
-//       1: `${names[0]} likes this`, 
-//       2: `${names[0]} and ${names[1]} like this`, 
-//       3: `${names[0]}, ${names[1]} and ${names[2]} like this`, 
-//       4: `${names[0]}, ${names[1]} and ${names.length - 2} others like this`, 
-//     }[Math.min(4, names.length)]
 // }

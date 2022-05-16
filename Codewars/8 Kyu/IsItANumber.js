@@ -15,7 +15,10 @@ isDigit("zero")
 */
 
 function isDigit(s) {
-   return Number.isNaN(parseFloat(s));
+   let trim = s.trim();
+   return Number(trim)
 }
 
 console.log(isDigit(" 3 5"));
+console.log(isDigit("3-5"));
+
