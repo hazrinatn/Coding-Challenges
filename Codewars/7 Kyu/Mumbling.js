@@ -27,7 +27,7 @@ Multiplies the string by their position
 */
 
 function accum(str) {
-    let split = str.split('');
+    let split = str.toLowerCase().split('');
     let arr = [];
     for (let i = 0; i < split.length; i++) {
         arr.push(split[i].repeat(i + 1))
@@ -38,3 +38,9 @@ function accum(str) {
 console.log(accum("abcd")); // return "A-Bb-Ccc-Dddd"
 console.log(accum("RqaEzty")); // return "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 console.log(accum("cwAt")); // return "C-Ww-Aaa-Tttt"
+
+
+//Alternative Solution
+// function accum(s) {
+//     return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+// }
