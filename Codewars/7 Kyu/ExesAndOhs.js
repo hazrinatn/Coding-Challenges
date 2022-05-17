@@ -45,3 +45,9 @@ function XO(str) {
 console.log(XO(("aabbXxoo")));
 console.log(XO(("aabbccc")));
 console.log(XO(("xxnnnooo")));
+
+
+//Alternative Solution
+// function XO(str) {
+//     return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length;
+// }
