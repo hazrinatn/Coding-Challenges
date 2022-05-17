@@ -18,7 +18,7 @@ Return true if the string containing the same amount of 'x's and 'o's, else retu
 
 Example:
 If we were given ("aabbXxoo") -> return true
-                 ("aabbccc") -> return false
+                 ("aabbccc") -> return true (no x and o present)
                  ("xxnnnooo") -> return false
 
 Pseudocode:
@@ -39,7 +39,7 @@ function XO(str) {
             arr2.push(str[i]);
         }
     }
-    return arr1.length === arr2.length && arr1.length !== 0 && arr2.length !== 0;
+    return arr1.length === arr2.length;
 }
 
 console.log(XO(("aabbXxoo")));
