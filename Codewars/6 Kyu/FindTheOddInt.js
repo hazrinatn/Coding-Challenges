@@ -25,5 +25,13 @@ If were given [8,9,7,7] -> should return 8 and 9 because both occur 1 time
               [4,4,9,9,5,4,5,5,5] -> should return 4  because it occurs 3 times
 
 Pseudocode:
-Set an empty array to push the same elements
+filter
+conditionals
 */
+
+function oddInt(arr) {
+    let newArr = arr.filter((index, val) => index !== arr.indexOf(val));
+    return newArr
+}
+
+console.log(oddInt([4,4,9,9,5,4,5,5,5]));
