@@ -62,4 +62,9 @@ console.log(dnaStrand("ATTGC"));
 console.log(dnaStrand("GTAT"));
 console.log(dnaStrand("CC"));
 
+//Alternative solution:
 
+// let pairs = {'A':'T','T':'A','C':'G','G':'C'};
+// function DNAStrand(dna){
+//   return dna.split('').map(function(v){ return pairs[v] }).join('');
+// }
