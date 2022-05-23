@@ -33,3 +33,11 @@ function sumOfTwo(arr) {
 console.log(sumOfTwo([19, 5, 42, 2, 77]));
 console.log(sumOfTwo([1, 2, 3, 10, 239]));
 console.log(sumOfTwo([98, 390, 85930, 909, 1]));
+
+
+//Alternative Solution
+//USING SORT!!! 🙀
+// function sumTwoSmallestNumbers(numbers){  
+//     numbers = numbers.sort(function(a, b){return a - b; });
+//     return numbers[0] + numbers[1];
+// };
