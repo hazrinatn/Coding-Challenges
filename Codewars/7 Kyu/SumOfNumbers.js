@@ -24,6 +24,8 @@ If we were given (2, 4) -> return 9 (2 + 3 + 4)
                  (-2, 5) -> return 12 (-2 + -1 + 0 + 1 + 2 + 3 + 4 + 5) 
 
 Pseudocode:
+Declare new variable to contain the sum of the numbers
+Conditionals
 Loop through the numbers, add the numbers
 Return sum of the numbers
 */
@@ -52,5 +54,14 @@ console.log(getSum(2, 2));
 console.log(getSum(-2, 5));
 console.log(getSum(12, 7));
 console.log(getSum(5, -2));
+
+
+//Alternative Solution
+//USE GAUSS SUMMATION!!! 🙀
+// const GetSum = (a, b) => {
+//     let min = Math.min(a, b),
+//         max = Math.max(a, b);
+//     return (max - min + 1) * (min + max) / 2;
+// }
 
 
