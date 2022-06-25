@@ -9,4 +9,29 @@ i.e.
 
 friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 Note: keep the original order of the names in the output.
+
+PREP
+Parameters:
+Given an array of strings
+
+Results:
+Return an array that contain strings that exactly have 4 characters
+
+Examples:
+If we were given ["Ryan", "Kieran", "Mark"] -> return ["Ryan", "Mark"]
+                 ["Justin", "Roby", "Ken", "Xiao", "Kyla"] -> return ["Roby", "Xiao", "Kyla"]
+                 ["Tom", "Sam", "Dave"] -> return ["Dave"]
+
+Pseudocode:
+Make a function that takes an array as the parameter
+Filter the strings that have the length of 4
+Return the result
 */
+
+function friend(names) {
+    return names.filter(name => name.length === 4)
+}
+
+console.log(friend(["Tom", "Sam", "Dave"])); // [ 'Dave' ]
+console.log(friend(["Justin", "Roby", "Ken", "Xiao", "Kyla"])); // [ 'Roby', 'Xiao', 'Kyla' ]
+console.log(friend(["Ryan", "Kieran", "Mark"])); // [ 'Ryan', 'Mark' ]
