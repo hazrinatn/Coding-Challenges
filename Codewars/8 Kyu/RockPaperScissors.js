@@ -40,3 +40,15 @@ function rockPaperScissors (player1, player2) {
 console.log(rockPaperScissors("scissors", "rock")); // Player 2 won!
 console.log(rockPaperScissors("scissors", "paper")); // Player 1 won!
 console.log(rockPaperScissors("paper", "paper")); // Player 1 won!
+
+//Alternatove solution
+// const rps = (p1, p2) => {
+//     if (p1 === p2) return "Draw!";
+//     let rules = {rock: "scissors", paper: "rock", scissors: "paper"};
+//     if (p2 === rules[p1]) {
+//       return "Player 1 won!";
+//     }
+//     else {
+//       return "Player 2 won!";
+//     }
+//   };
