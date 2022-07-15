@@ -1,11 +1,11 @@
 # Coding Challenges: <a target="_blank" href="https://www.codewars.com/users/hazrinatn/" >Visit Here</a> 
 
 
-A repository filled with codewars challenges (kata). Currently Top 22.678% on the global leaderboard, Completed over 100+ challenges and Push 5+ solutions every week.
+A repository filled with codewars coding challenges (kata). Currently Top 22.678% on the global leaderboard. Completed over 100+ challenges and Push 5+ solutions every week.
 
 ## How It's Made:
 
-**Tech used:** <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
+**Tech used:** <img src="https://img.shields.io/badge/-JavaScript-%23004020?style=for-the-badge&logo=javascript"/>
 
 Everyday, the first thing I do is solve a Codewar! 
 
