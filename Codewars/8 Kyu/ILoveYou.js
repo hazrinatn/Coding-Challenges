@@ -35,6 +35,8 @@ Conditionals
 Return results
 */
 
+
+// Option 1
 function howMuchILoveYou(nbPetals) {
     if (nbPetals === 1 || nbPetals % 6 === 1) {
         return "I love you"
@@ -51,9 +53,25 @@ function howMuchILoveYou(nbPetals) {
     }
 }
 
-console.log(howMuchILoveYou(7));
-console.log(howMuchILoveYou(23));
-console.log(howMuchILoveYou(9));
-console.log(howMuchILoveYou(12));
+// Option 2
+// Make an array with the respective order
+const phrases = [
+    'I love you',
+    'a little',
+    'a lot',
+    'passionately',
+    'madly',
+    'not at all',
+] 
+
+// Create a function that return the element of the array modulus the length of the array
+function howMuchILoveYou(n) {
+     return phrases[(n - 1) % phrases.length] 
+}
+
+console.log(howMuchILoveYou(7)); // I love you
+console.log(howMuchILoveYou(23)); // madly
+console.log(howMuchILoveYou(9)); // a lot
+console.log(howMuchILoveYou(12)); // not at all
 
 
