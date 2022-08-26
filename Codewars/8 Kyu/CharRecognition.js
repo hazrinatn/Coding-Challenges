@@ -28,9 +28,27 @@ Replace the character with the correct ones
 Return the result
 */
 
+// Option 1
+// function correct(string) {
+//     return string.replaceAll('5', 'S').replaceAll('0', 'O').replaceAll('1', 'I')
+// }
+
+
+// Option 2
 function correct(string) {
-    return string.replaceAll('5', 'S').replaceAll('0', 'O').replaceAll('1', 'I')
+    let split = string.split('')
+    for (let i = 0; i < split.length; i++) {
+        if(split[i] === '5') {
+            split[i] = 'S'
+        } else if (split[i] === '0') {
+            split[i] = 'O'
+        } else if (split[i] === '1') {
+            split[i] = 'I'
+        }
+    }
+    return split.join('')
 }
+
 
 console.log(correct("51NGAP0RE"));
 console.log(correct("THA1LAND"));
