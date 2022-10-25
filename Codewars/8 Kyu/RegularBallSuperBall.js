@@ -34,6 +34,13 @@ let Ball = function(ballType = "regular") {
 //     this.ballType = ballType || 'regular';
 // };
 
+// //Alternative Solution Using Class Constructor
+// class Ball {
+//     constructor(ballType = "regular") {
+//       this.ballType = ballType;
+//     }
+// }
+
 let ball1 = new Ball();
 let ball2 = new Ball("super")
 
