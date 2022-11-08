@@ -34,6 +34,11 @@ const arrayDiff = (a,b) => {
     return a.filter(el => !b.includes(el))
 }
 
+// Alternative solution
+// function array_diff(a, b) {
+//     return a.filter(function(x) { return b.indexOf(x) == -1; });
+//   }
+
 console.log(arrayDiff([1,2], [1]));
 console.log(arrayDiff([1,2,2], [1]));
 console.log(arrayDiff([1,2,2], [2]));
