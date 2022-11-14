@@ -50,10 +50,16 @@ const runningSum = function(nums) {
     let prev = []
     for (let i = 0; i < nums.length; i++) {
         prev.push(nums[i])
-        res.push(nums[i] + prev.reduce((a,b) => a + b, 0) - nums[i])
+        res.push(prev.reduce((a,b) => a + b, 0))
     }
     return res
 }
+
+// Faster Solution
+// const runningSum = nums => {
+//     nums.reduce((acc,cur,i,arr) => arr[i] += acc)
+//     return nums
+// }
 
 console.log(runningSum([3,1,2,10,1]));
 console.log(runningSum([1,1,1,1]));
