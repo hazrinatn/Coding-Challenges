@@ -32,6 +32,9 @@ const countBits = (n) => {
     return split.reduce((a,b) => Number(a) + Number(b), 0)
 }
 
+// Alternative solution
+// const countBits = n => n.toString(2).split('0').join('').length;
+
 console.log(countBits(1234));
 console.log(countBits(4));
 console.log(countBits(7));
