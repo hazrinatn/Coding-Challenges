@@ -55,6 +55,13 @@ const duplicateCount = (text) => {
     
 }
 
+// Alternative Solution
+// function duplicateCount(text){
+//     return text.toLowerCase().split('').filter(function(val, i, arr){
+//       return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+//     }).length;
+// }
+
 console.log(duplicateCount("aabBcde"));
 console.log(duplicateCount("ABBA"));
 console.log(duplicateCount("aA11"));
