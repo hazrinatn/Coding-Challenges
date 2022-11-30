@@ -34,6 +34,14 @@ function isPangram(string){
       .every((x) => string.toLowerCase().includes(x));
 }
 
+// Alternative solution
+// function isPangram(string){
+//     string = string.toLowerCase();
+//     return "abcdefghijklmnopqrstuvwxyz".split("").every(function(x){
+//       return string.indexOf(x) !== -1;
+//     });
+// }
+
 console.log(isPangram("The quick brown fox jumps over the lazy dog."));
 console.log(isPangram("This is not a pangram"));
 console.log(isPangram("AbCdEfGhIjKlM zYxWvUtSrQpOn"));
