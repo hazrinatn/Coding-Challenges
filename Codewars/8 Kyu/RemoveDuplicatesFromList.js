@@ -26,6 +26,10 @@ const distinct = (a) => {
     return [... new Set(a)]
 }
 
+
+// Alternative solution
+// const distinct = a => a.filter((item, index) => a.indexOf(item) === index);
+
 console.log(distinct([1,3,5,5]));
 console.log(distinct([12,22,18,18,12]));
 console.log(distinct([-4,0,0,4,5]));
