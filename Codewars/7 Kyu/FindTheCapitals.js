@@ -22,16 +22,26 @@ Push the index to the array
 Return the array
 */ 
 
-const capitals = (word) => {
-    let split = word.split('')
+// const capitals = (word) => {
+//     let split = word.split('')
+//     let res = []
+//     for (let i = 0; i < split.length; i++) {
+//         if (split[i] == "A" || split[i] == "B" || split[i] == "C" || split[i] == "D" || split[i] == "E" || split[i] == "F" || split[i] == "G" || split[i] == "H" || split[i] == "I" || split[i] == "J" || split[i] == "K" || split[i] == "L" || split[i] == "M" || split[i] == "N" || split[i] == "O" || split[i] == "P" || split[i] == "Q" || split[i] == "R" || split[i] == "S" || split[i] == "T" || split[i] == "U" || split[i] == "V" || split[i] == "W" || split[i] == "X" || split[i] == "Y" || split[i] == "Z") {
+//             res.push(i)
+//         }
+//     }
+//     return res
+// }
+
+const capitals = function (word) {
     let res = []
-    for (let i = 0; i < split.length; i++) {
-        if (split[i] == "A" || split[i] == "B" || split[i] == "C" || split[i] == "D" || split[i] == "E" || split[i] == "F" || split[i] == "G" || split[i] == "H" || split[i] == "I" || split[i] == "J" || split[i] == "K" || split[i] == "L" || split[i] == "M" || split[i] == "N" || split[i] == "O" || split[i] == "P" || split[i] == "Q" || split[i] == "R" || split[i] == "S" || split[i] == "T" || split[i] == "U" || split[i] == "V" || split[i] == "W" || split[i] == "X" || split[i] == "Y" || split[i] == "Z") {
-            res.push(i)
+    for (let i = 0; i < word.length; i++) {
+        if (word[i].toUpperCase() == word[i]) {
+        res.push(i)
         }
     }
     return res
-}
+};
 
 console.log(capitals('CodEWaRs'));
 console.log(capitals('ExamPle'));
